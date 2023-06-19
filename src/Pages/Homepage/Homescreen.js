@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
-import Banner from "./Banner";
+
+import Banner from './Banner'
 import Blog from "./Blog";
 import { GetAllAds } from "../../http/Services";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer/Footer";
+
 
 const Homescreen = () => {
   const [products, setProducts] = React.useState([]);
@@ -27,7 +29,7 @@ const Homescreen = () => {
   return (
     <div>
       <Navbar />
-      <Banner />
+    <Banner/>
       <Blog products={products} />
       <Footer />
     </div>
