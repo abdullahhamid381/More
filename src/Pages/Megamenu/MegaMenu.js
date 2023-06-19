@@ -96,31 +96,42 @@ const MegaMenu = () => {
               <i className="fas fa-times" />
             </label>
             <li>
-              <a href="#">Super Market</a>
+            <img src="./images/vehicles.png.png" alt="" />
+              <a href="#">Vehicles</a>
             </li>
             <li>
+            <img src="./images/real-estate.png.png" alt="" />
+              <a href="#">Property</a>
+            </li>
+            <li>
+            <img src="./images/mobile.png.png" alt="" />
+              <a href="#">Mobile Phone</a>
+            </li>
+            <li>
+            <img src="./images/electronics.png.png" alt="" />
+              <a href="#">Electronic</a>
+            </li>
+            <li>
+            <img src="./images/home.png.png" alt="" />
+              <a href="#">Home, Furniture & Appliances</a>
+            </li>
+            <li>
+                <img src="./images/beauty.png.png" alt="" />
               <a href="#">Health & Beauty</a>
             </li>
-            <li>
-              <a href="#">Home & Office</a>
-            </li>
-            <li>
-              <a href="#">Appliances</a>
-            </li>
-            <li>
-              <a href="#">Phone & Tablets</a>
-            </li>
-            <li>
-              <a href="#">Computing</a>
-            </li>
 
             <li>
-              <a href="#" />
+            <img src="./images/fashion.png.png" alt="" />
               <a href="#">Fashion</a>
             </li>
+            <li>
+            <img src="./images/hobbies.png.png" alt="" />
+              <a href="#">Sports, Arts, Outdoor</a>
+            </li>
+          
 
          
-            <li>
+            {/* <li>
               <a href="#" className="desktop-item">
                 Sporting Goods
               </a>
@@ -186,7 +197,7 @@ const MegaMenu = () => {
                   </div>
                 </div>
               </div>
-            </li>
+            </li> */}
            
           </ul>
           <label htmlFor="menu-btn" className="btn menu-btn">

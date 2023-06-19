@@ -9,7 +9,7 @@
     nav .wrapper {
       position: relative;
       /* max-width: 1200px; */
-      padding: 0px 25px;
+      
       /* height: 100%; */
       width: 100%;
       line-height: 25px;
@@ -36,21 +36,27 @@
       flex-direction: column;
       background: white;
       padding-left: 20px;
-      box-shadow: 0px 0px 5px 2px #70707024;
+    //   box-shadow: 0px 0px 5px 2px #70707024;
+      border: 1px solid #70707024;
       /* padding: 10px 0 1px 30px; */
       margin: 0;
       padding-top: 10px;
+      border-radius: 4px;
       padding-bottom: 10px;
     }
   
     .nav-links li {
       list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom:10px ;
     }
   
     .nav-links li a {
-      color: #000000;
+      color: #808080;
       text-decoration: none;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 500;
   
       border-radius: 5px;
@@ -78,17 +84,17 @@
     .nav-links li:hover .drop-menu,
     .nav-links li:hover .mega-box {
       
-      top: 0;
-      opacity: 1;
-      visibility: visible;
-      z-index: 55555;
-      left: 216px;
-      width: 958px;
-      /* height: 100%; */
-      background: #ffffff;
-      /* max-height: 507px; */
-      /* height: 127vh; */
-      height: 503px;
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+        z-index: 55555;
+        left: 216px;
+        width: 1278px;
+        /* height: 100%; */
+        background: #ffffff;
+        /* max-height: 507px; */
+        /* height: 127vh; */
+        height: 503px;
     }
   
     .drop-menu li a {

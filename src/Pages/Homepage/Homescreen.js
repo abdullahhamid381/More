@@ -29,8 +29,7 @@ const Homescreen = () => {
   }, []);
   return (
     <div>
-      <Navbar />
-    <Banner/>
+    
     <Dashboard/>
       <Blog products={products} />
       <Footer />
