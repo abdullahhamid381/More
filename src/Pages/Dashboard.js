@@ -190,21 +190,45 @@ function Dashboard() {
           />
         </div> */}
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 8fr', padding: '20px 20px',gap:'10px' }}>
+
+          {/* MEGAMENU SECTION */}
+          
           <div>
             <MegaMenu />
           </div>
+
+         
+
+
           <div>
+             {/* BANNER SECTION */}
             <div style={{}}>
               <img src={img} alt="" style={{ width: '100%',  }} />
             </div>
-            <div className="flex flex-col border-[#2F2F2F17]  px-10 my-14 flex-wrap justify-center items-center  ">
+
+{/* ADS SECTION */}
+
+<div className="ads-card-parent" style={{background:'white',position:'relative'}}>
+
+  <div>
+    <img src="./images/car1.png" alt="" />
+  </div>
+  <div>
+    <h1>Hyundai Sonata 2011 Black</h1>
+    <span>₦ 1,300,000</span>
+  </div>
+  <div style={{position:'absolute',top:'40px'}}>
+  <img src="./images/button.png" alt="" />
+  </div>
+</div>
+            {/* <div className="flex flex-col border-[#2F2F2F17]  px-10 my-14 flex-wrap justify-center items-center  ">
               {displayProducts
                 .slice(0)
                 .reverse()
                 .map((product) => (
                   <ProductComponent product={product} />
                 ))}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="w-full items-center justify-center my-8 ">

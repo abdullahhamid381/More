@@ -15,6 +15,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Admin from "./Pages/Admin";
 import Homescreen from "./Pages/Homepage/Homescreen";
 import Dashboard from "./Pages/Dashboard";
+import Pakage from "./Components/Pakage/Pakage";
 
 function Main() {
   const LoginBool = false;
@@ -64,6 +65,7 @@ function Main() {
 
             <Route path="/Register" element={<Register />} />
             <Route path="/" element={<Dashboard />} />
+            <Route path="/pakage" element={<Pakage/>}/>
             <Route path="/About" element={<Homescreen />} />
             <Route path="/ProductDetails/:id" element={<ProductDetails />} />
 
