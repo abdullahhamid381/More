@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 const Pakage = () => {
     return (
         <div className="pakage-parent">
-            <Navbar />
+         
             <div className="pakage-sub-parent">
                 <div>
                     <h1 className="pakage-title">

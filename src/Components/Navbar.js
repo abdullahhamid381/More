@@ -70,14 +70,14 @@ export default function Navbar({ fixed }) {
                         </span>
                       </li>
                     </Link>
-                    <Link to={"/pakage"}>
+                    {/* <Link to={'/pakage'}>
                       <li className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75 hover:bg-[#5cabff] hover:text-white cursor-pointer ">
                         <i className="fa fa-home text-[20px] leading-lg text-black opacity-75  "></i>
                         <span className="ml-2 text-[16px]  mobile:hidden ">
                         Pakages
                         </span>
                       </li>
-                    </Link>
+                    </Link> */}
                     {user && (
                       <Link to={"/MyAccount"}>
                         <li className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75 hover:bg-[#5cabff] hover:text-white cursor-pointer ">

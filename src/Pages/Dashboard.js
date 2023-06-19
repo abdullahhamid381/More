@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "../http/axiosSet.js";
 import MegaMenu from "./Megamenu/MegaMenu";
 import img from '../assets/Tabpanel ⏵ Link.png'
+import Pakage from "../Components/Pakage/Pakage";
 const ProductComponent = ({ product }) => {
   console.log("product", product);
   const navigate = useNavigate();
@@ -236,7 +237,7 @@ function Dashboard() {
           />
         </div>
       </div>
-
+<Pakage/>
       <div className=" ">
       <Footer />
       </div>

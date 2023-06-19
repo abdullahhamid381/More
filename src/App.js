@@ -65,7 +65,8 @@ function Main() {
 
             <Route path="/Register" element={<Register />} />
             <Route path="/" element={<Dashboard />} />
-            <Route path="/pakage" element={<Pakage/>}/>
+            <Route path="/pakage" element={<Pakage />} />
+        
             <Route path="/About" element={<Homescreen />} />
             <Route path="/ProductDetails/:id" element={<ProductDetails />} />
 
