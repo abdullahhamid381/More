@@ -10,6 +10,8 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { useNavigate } from "react-router-dom";
 import axios from "../http/axiosSet.js";
+import MegaMenu from "./Megamenu/MegaMenu";
+import img from '../assets/Tabpanel ⏵ Link.png'
 const ProductComponent = ({ product }) => {
   console.log("product", product);
   const navigate = useNavigate();
@@ -188,10 +190,14 @@ function Dashboard() {
           />
         </div>
       <div style={{display:'grid',gridTemplateColumns:'2fr 8fr'}}>
-        <div style={{marginTop:'40px'}}>
-          {/* <MegaMenu/> */}
+        <div>
+          <MegaMenu/>
         </div>
-      <div className="flex flex-col border-[#2F2F2F17]  px-10 my-14 flex-wrap justify-center items-center  ">
+     <div>
+      <div>
+        <img src={img} alt="" style={{width:'80%'}} />
+      </div>
+     <div className="flex flex-col border-[#2F2F2F17]  px-10 my-14 flex-wrap justify-center items-center  ">
           {displayProducts
             .slice(0)
             .reverse()
@@ -199,6 +205,7 @@ function Dashboard() {
               <ProductComponent product={product} />
             ))}
         </div>
+     </div>
       </div>
         <div className="w-full items-center justify-center my-8 ">
           <Pagination

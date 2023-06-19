@@ -6,6 +6,7 @@ import { GetAllAds } from "../../http/Services";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import Dashboard from "../Dashboard";
 
 
 const Homescreen = () => {
@@ -30,6 +31,7 @@ const Homescreen = () => {
     <div>
       <Navbar />
     <Banner/>
+    <Dashboard/>
       <Blog products={products} />
       <Footer />
     </div>

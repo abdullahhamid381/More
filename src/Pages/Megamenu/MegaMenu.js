@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import "./Megamenu.scss";
-import { useSelector, useDispatch } from "react-redux";
 
-const Megamenu = () => {
-  const { categories } = useSelector((state) => state.Categories);
-  console.log(categories);
+
+
+import './MegaMenu.scss'
+const MegaMenu = () => {
+
 
   return (
     <div className="mega-menu-parent">
@@ -13,7 +13,7 @@ const Megamenu = () => {
           <div className="logo"></div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
-          <ul className="nav-links">
+          {/* <ul className="nav-links">
             <label htmlFor="close-btn" className="btn close-btn">
               <i className="fas fa-times" />
             </label>
@@ -90,8 +90,8 @@ const Megamenu = () => {
             <li>
               <a href="#">Other Categories</a>
             </li>
-          </ul>
-          {/* <ul className="nav-links">
+          </ul> */}
+          <ul className="nav-links">
             <label htmlFor="close-btn" className="btn close-btn">
               <i className="fas fa-times" />
             </label>
@@ -119,30 +119,7 @@ const Megamenu = () => {
               <a href="#">Fashion</a>
             </li>
 
-            <li>
-              <a href="#"></a>
-              <a href="#" className="desktop-item">
-                Baby Products
-              </a>
-              <input type="checkbox" id="showDrop" />
-              <label htmlFor="showDrop" className="mobile-item">
-                Dropdown Menu
-              </label>
-              <ul className="drop-menu">
-                <li>
-                  <a href="#">Drop menu 1</a>
-                </li>
-                <li>
-                  <a href="#">Drop menu 2</a>
-                </li>
-                <li>
-                  <a href="#">Drop menu 3</a>
-                </li>
-                <li>
-                  <a href="#">Drop menu 4</a>
-                </li>
-              </ul>
-            </li>
+         
             <li>
               <a href="#" className="desktop-item">
                 Sporting Goods
@@ -210,10 +187,8 @@ const Megamenu = () => {
                 </div>
               </div>
             </li>
-            <li>
-              <a href="#">Other Categories</a>
-            </li>
-          </ul> */}
+           
+          </ul>
           <label htmlFor="menu-btn" className="btn menu-btn">
             <i className="fas fa-bars" />
           </label>
@@ -223,4 +198,4 @@ const Megamenu = () => {
   );
 };
 
-export default Megamenu;
+export default MegaMenu;
