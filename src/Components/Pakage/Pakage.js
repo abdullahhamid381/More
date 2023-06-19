@@ -62,7 +62,7 @@ const Pakage = () => {
                 </div>
               
             </div>
-            <Footer/>
+        
         </div>
     );
 };
