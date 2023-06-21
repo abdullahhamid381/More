@@ -80,7 +80,7 @@ function Admin() {
             fontSize: "30px",
           }}
         >
-          ajouter une catégorie
+          {/* ajouter une catégorie */}
         </p>
         <div
           className="flex justify-between flex-row "
@@ -101,7 +101,7 @@ function Admin() {
               color: "white",
             }}
           >
-            catégorie
+           Category
           </div>
 
           <input
@@ -120,7 +120,7 @@ function Admin() {
               color: "white",
             }}
           >
-            Sous-catégories
+           Sub-Category
           </div>
 
           <input
@@ -140,7 +140,7 @@ function Admin() {
             }}
           />
         </div>
-        <p
+        {/* <p
           style={{
             marginLeft: 10,
             fontWeight: "500",
@@ -152,7 +152,7 @@ function Admin() {
           <span style={{ fontWeight: "bold", color: "red" }}>Note:</span>
           Appuyez sur Entrée après avoir écrit chaque sous-catégorie pour
           l'ajouter et appuyez sur la balise pour la supprimer
-        </p>
+        </p> */}
         <div className="flex flex-row" style={{ display: "flex" }}>
           {category.subCategories.map((item) => {
             return (
