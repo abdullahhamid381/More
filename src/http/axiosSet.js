@@ -11,7 +11,7 @@ const get = async (key) => {
 };
 
 const instance = axios.create({
-  baseURL: "https://arfibababackend-production.up.railway.app/auth/google",
+  baseURL: "http://localhost:5000",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",

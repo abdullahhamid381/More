@@ -1,10 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 
 
 
 import './MegaMenu.scss'
 const MegaMenu = () => {
-
+  
+useEffect(()=>{
+  fetch('https://classifiedads.onrender.com/category/').then((result)=>{
+  result.json().then((resp)=>{
+    console.log('result',resp)
+  })
+})
+},[])
 
   return (
     <div className="mega-menu-parent">
@@ -97,7 +104,9 @@ const MegaMenu = () => {
             </label>
             <li>
             <img src="./images/vehicles.png.png" alt="" />
-              <a href="#">Vehicles</a>
+             <div>
+             <a href="#">Vehicles</a>
+             </div>
             </li>
             <li>
             <img src="./images/real-estate.png.png" alt="" />
@@ -127,6 +136,38 @@ const MegaMenu = () => {
             <li>
             <img src="./images/hobbies.png.png" alt="" />
               <a href="#">Sports, Arts, Outdoor</a>
+            </li>
+            <li>
+            <img src="./images/jobseekers.png.png" alt="" />
+              <a href="#">Seeking Work CVs</a>
+            </li>
+            <li>
+            <img src="./images/services.png.png" alt="" />
+              <a href="#">Services</a>
+            </li>
+            <li>
+            <img src="./images/jobs.png.png" alt="" />
+              <a href="#">Jobs</a>
+            </li>
+            <li>
+            <img src="./images/babies.png.png" alt="" />
+              <a href="#">Babies & Kids</a>
+            </li>
+            <li>
+            <img src="./images/animals.png.png" alt="" />
+              <a href="#">Animals & Pets</a>
+            </li>
+            <li>
+            <img src="./images/agriculture.png.png" alt="" />
+              <a href="#">Agriculture & Food</a>
+            </li>
+            <li>
+            <img src="./images/equipment.png.png" alt="" />
+              <a href="#">Commercial Equipment & Tools</a>
+            </li>
+            <li>
+            <img src="./images/repair.png.png" alt="" />
+              <a href="#">Repair & Construction</a>
             </li>
           
 

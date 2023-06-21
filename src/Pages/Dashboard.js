@@ -33,25 +33,26 @@ const ProductComponent = ({ product }) => {
   return (
     <div>
 
-      <div className="card-grid">
+      <div className="card-grid" style={{borderRadius:'4px',boxShadow: '0px 1px 2px rgba(96, 125, 135, 0.15)'}}>
       {/* onClick={() => navigate(`/ProductDetails/${product._id}`)} */}
         <div className="card-parent"
-         style={{margin:'10px 0'}}
+         style={{margin:'10px 0',position:'relative',borderRadius:'4px'}}
         >
           <img
             src={`${axios.defaults.baseURL}/upload/image/${product.images[0]}`}
            
             
-            crossorigin="anonymous"
+            crossorigin="anonymous" style={{borderRadius:'4px'}}
           />
 
           {/* <div className="bg-white w-full py-2  absolute top-[55.8%] rounded-t-3xl "></div> */}
 
-          <div style={{padding:'10px 10px'}}>
+          <div style={{padding:'25px 10px 10px 10px'}}>
             <div >
               <p style={{fontSize:'18px',fontWeight:'600'}}>
                 {product.title}
               </p>
+             
               {/* <p >
                 <span className="font-bold">Category :</span> {product.category[0]}{" "}
                 /{product.subCategory}
@@ -66,8 +67,8 @@ const ProductComponent = ({ product }) => {
               {/* make add buttun bg green */}
             </div>
             <div >
-              <p style={{fontSize:'15px',fontWeight:'400'}}>
-                <span >Price:</span>
+              <p style={{fontSize:'15px',fontWeight:'400',color:'#00B53F',fontWeight:'500'}}>
+                <span style={{color:'#00B53F'}}>Price:</span>
                 {product.price} $
               </p>
               {/* <p >
@@ -86,6 +87,9 @@ const ProductComponent = ({ product }) => {
                 Contact
               </div> */}
             </div>
+            <div style={{position:'absolute',top:'130px',right:'20px'}}>
+                <img src="./images/button.png" alt="" />
+              </div>
           </div>
         </div>
       </div>
@@ -191,7 +195,7 @@ function Dashboard() {
             onSelect={handleTagClicked}
           />
         </div> */}
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 8fr', padding: '20px 20px', gap: '10px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '2fr 8fr', padding: '20px 20px', gap: '10px',width:'90%',margin:'auto' }}>
 
           {/* MEGAMENU SECTION */}
 
@@ -205,7 +209,12 @@ function Dashboard() {
           <div>
             {/* BANNER SECTION */}
             <div style={{}}>
-              <img src={img} alt="" style={{ width: '100%', }} />
+         <div>
+         <img src={img} alt="" style={{ width: '100%', }} />
+         </div>
+         {/* <div>
+          <img src="./images/add.png" alt=""nstyle={{ width: '100%', }}  />
+         </div> */}
             </div>
 
             {/* ADS SECTION */}
@@ -213,7 +222,7 @@ function Dashboard() {
         
 
 
-            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:'10px',margin:'20px 0'}} >
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr 1fr',gap:'10px',margin:'20px 0'}} >
               {displayProducts
                 .slice(0)
                 .reverse()
@@ -237,7 +246,7 @@ function Dashboard() {
           />
         </div>
       </div>
-<Pakage/>
+{/* <Pakage/> */}
       <div className=" ">
       <Footer />
       </div>

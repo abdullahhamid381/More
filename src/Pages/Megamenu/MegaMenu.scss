@@ -32,10 +32,10 @@
   
     .wrapper .nav-links {
       display: flex;
-      height: 503px;
+      height: 750px;
       flex-direction: column;
       background: white;
-      padding-left: 20px;
+      padding-left: 10px;
     //   box-shadow: 0px 0px 5px 2px #70707024;
       border: 1px solid #70707024;
       /* padding: 10px 0 1px 30px; */
@@ -43,6 +43,7 @@
       padding-top: 10px;
       border-radius: 4px;
       padding-bottom: 10px;
+      box-shadow: 1px 1px 4px rgba(80, 114, 125, 0.4);
     }
   
     .nav-links li {
@@ -56,8 +57,8 @@
     .nav-links li a {
       color: #808080;
       text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
+      font-weight: 400;
+font-size: 13px;
   
       border-radius: 5px;
       transition: all 0.3s ease;
